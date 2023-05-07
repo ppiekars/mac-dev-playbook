@@ -33,7 +33,7 @@ dockitems_persist:
   path: "/Applications/Visual Studio Code.app/"
   pos: 11
 - name: "Activity Monitor"
-  path: "/Applications/Activity Monitor.app/"
+  path: "/Applications/Utilities/Activity Monitor.app/"
   pos: 12
 - name: "Notion"
   path: "/Applications/Notion.app/"
