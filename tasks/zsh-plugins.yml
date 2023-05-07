@@ -7,3 +7,7 @@
   command: "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
   ignore_errors: yes
   changed_when: false
+- name: Install syntax highlighting plugin.
+  command: "git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k"
+  ignore_errors: yes
+  changed_when: false
