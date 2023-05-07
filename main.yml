@@ -14,9 +14,6 @@
 
   roles:
     - role: elliotweiser.osx-command-line-tools
-    - role: gantsign.oh-my-zsh
-      users:
-        - username: patryk
     - role: geerlingguy.mac.homebrew
       tags: ['homebrew']
     - role: geerlingguy.dotfiles
@@ -28,6 +25,9 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
+    - role: gantsign.oh-my-zsh
+      users:
+        - username: patryk
 
   tasks:
     - import_tasks: tasks/zsh-plugins.yml
