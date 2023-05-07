@@ -30,6 +30,10 @@
       tags: ['dock']
 
   tasks:
+    - import_tasks: tasks/zsh-plugins.yml
+      when: install_zsh_plugins
+      tags: ['plugins']
+
     - import_tasks: tasks/sudoers.yml
       when: configure_sudoers
       tags: ['sudoers']
