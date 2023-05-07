@@ -6,16 +6,23 @@ configure_terminal: true
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
-dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+configure_dock: true
+dockitems_remove:
+- 'App Store'
+- Calendar
+- Contacts
+- FaceTime
+- Freeform
+- Maps
+- Music
+- Podcasts
+- TV
+- Safari
+dockitems_persist:
+- name: "Google Chrome"
+  path: "/Applications/Google Chrome.app/"
+  pos: 2
+
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -24,62 +31,58 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/ppiekars/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
-  - .zshrc
-  - .gitignore
-  - .inputrc
   - .osx
-  - .vimrc
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
-  - github/gh/gh
-  - go
+  - apache-spark
+  - gh
   - gpg
+  - hadoop
   - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
-  - node
-  - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
+  - kubernetes-cli
+  # - msodbcsql18
+  # - mssql-tools18
+  # - unixodbc
   - openssl
-  - pv
+  - pyenv
+  - snappy
+  - sqlite
   - wget
-  - wrk
-  - zsh-history-substring-search
+
+
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  # - microsoft/mssql-release
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
+  - adobe-acrobat-reader
+  - aldente
+  - altserver
+  - alt-tab
   - docker
-  - dropbox
-  - firefox
   - google-chrome
-  - handbrake
-  - licecap
-  - sequel-ace
-  - slack
-  - sublime-text
-  - transmit
+  - hot
+  - iterm2
+  # - microsoft-azure-storage-explorer
+  - microsoft-remote-desktop
+  - notion
+  - postman
+  # - pycharm
+  - pycharm-ce
+  - rectangle
+  - signal
+  - tor-browser
+  - visual-studio-code
+  - vlc
+  - wine-stable
+
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -108,23 +111,35 @@ pip_packages: []
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
 
-# Set to 'true' to configure Sublime Text.
-configure_sublime: false
-sublime_base_path: '~/Library/Application Support/Sublime Text'
-sublime_config_path: "Packages/User"
-sublime_package_control:
-  - "DocBlockr"
-  - "Dockerfile Syntax Highlighting"
-  - "FileDiffs"
-  - "GitHub Flavored Markdown Preview"
-  - "Jinja2"
-  - "Package Control"
-  - "PHP-Twig"
-  - "Pretty JSON"
-  - "SublimeLinter"
-  - "SublimeLinter-contrib-yamllint"
-  - "TrailingSpaces"
-  - "WordCount"
-
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
+
+
+# Default theme
+oh_my_zsh_theme: robbyrussell
+
+# Default plugins
+oh_my_zsh_plugins:
+  - git
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
+
+# Whether to install by default for all specified users.
+# May be overridden by `oh_my_zsh: install:` under each user.
+oh_my_zsh_install: true
+
+# Default update mode for Oh-My-Zsh
+# accepted values are:
+# disabled (default)
+# auto
+# reminder
+oh_my_zsh_update_mode: reminder
+
+# Default update frequency in days. When the update mode is set to a value other
+# than "disabled", this is the frequency (in days) to check for a new version.
+# The value 0 will check every time a new shell session starts.
+oh_my_zsh_update_frequency: 13
+
+# Whether to write the ~/.zshrc file
+# May be overridden by `oh_my_zsh: write_zshrc:` under each user.
+oh_my_zsh_write_zshrc: true
