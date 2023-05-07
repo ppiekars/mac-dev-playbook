@@ -1,13 +1,13 @@
 ---
 - name: Install autosuggestions plugin.
   command: "git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
-  ignore_errors: yes
+  ignore_errors: true
   changed_when: false
 - name: Install syntax highlighting plugin.
   command: "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
-  ignore_errors: yes
+  ignore_errors: true
   changed_when: false
 - name: Install syntax highlighting plugin.
   command: "git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k"
-  ignore_errors: yes
+  ignore_errors: true
   changed_when: false

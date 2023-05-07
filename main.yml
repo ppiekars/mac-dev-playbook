@@ -45,6 +45,15 @@
     - import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
 
+    - name: Configure VSCode fontFamily to use Meslo LG M for Powerline
+      tags: ['vscode']
+      lineinfile:
+        path: ~/Library/Application Support/Code/User/settings.json
+        regexp: '"terminal.integrated.fontFamily":'
+        line: '"terminal.integrated.fontFamily": "Meslo LG M for Powerline",'
+        state: present
+        create: yes
+
     - name: Run post-provision task files in a block.
       tags: ['post']
       block:
