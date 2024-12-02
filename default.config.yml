@@ -24,6 +24,9 @@ dockitems_persist:
 - name: "Google Chrome"
   path: "/Applications/Google Chrome.app/"
   pos: 2
+- name: "Brave Browser"
+  path: "/Applications/Brave Browser.app/"
+  pos: 2
 - name: "iTerm"
   path: "/Applications/iTerm.app/"
   pos: 9
@@ -39,6 +42,8 @@ dockitems_persist:
 - name: "Notion"
   path: "/Applications/Notion.app/"
   pos: 13
+- name: "Signal"
+  path: "/Applications/Signal.app/"
 
 
 
@@ -56,18 +61,17 @@ dotfiles_files:
   - .osx
 
 homebrew_installed_packages:
-  - apache-spark
   - gh
   - gpg
   - hadoop
-  - httpie
+  # - httpie
   - kubernetes-cli
   # - msodbcsql18
   # - mssql-tools18
   # - unixodbc
   - openssl
   - pyenv
-  - snappy
+  # - snappy
   - sqlite
   - wget
 
@@ -86,16 +90,21 @@ homebrew_cask_apps:
   - alt-tab
   - docker
   - google-chrome
-  - hot
+  - brave
+  # - hot
   - iterm2
   # - microsoft-azure-storage-explorer
-  - microsoft-remote-desktop
+  # - microsoft-remote-desktop
+  - nextcloud
   - notion
-  - postman
+  # - postman
   # - pycharm
   - pycharm-ce
   - rectangle
   - signal
+  - discord
+  - teamviewer
+  - transmission
   - tor-browser
   - visual-studio-code
   - vlc
