@@ -61,18 +61,22 @@ dotfiles_files:
   - .osx
 
 homebrew_installed_packages:
-  - gh
-  - gpg
-  - hadoop
+  # - gh
+  # - gpg
+  # - hadoop
   # - httpie
   - kubernetes-cli
   # - msodbcsql18
   # - mssql-tools18
   # - unixodbc
+  - node
+  - pnpm
+  - pre-commit
   - openssl
   - pyenv
   # - snappy
   - sqlite
+  - uv
   - wget
 
 
@@ -84,13 +88,13 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - adobe-acrobat-reader
+  # - adobe-acrobat-reader
   - aldente
   - altserver
   - alt-tab
   - docker
   - google-chrome
-  - brave
+  - brave-browser
   # - hot
   - iterm2
   # - microsoft-azure-storage-explorer
@@ -98,8 +102,8 @@ homebrew_cask_apps:
   - nextcloud
   - notion
   # - postman
-  # - pycharm
-  - pycharm-ce
+  - pycharm
+  # - pycharm-ce
   - rectangle
   - signal
   - discord
