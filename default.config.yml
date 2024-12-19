@@ -19,11 +19,7 @@ dockitems_remove:
 - Music
 - Podcasts
 - TV
-- Safari
 dockitems_persist:
-- name: "Google Chrome"
-  path: "/Applications/Google Chrome.app/"
-  pos: 2
 - name: "Brave Browser"
   path: "/Applications/Brave Browser.app/"
   pos: 2
@@ -93,17 +89,17 @@ homebrew_cask_apps:
   - altserver
   - alt-tab
   - docker
-  - google-chrome
+  # - google-chrome
   - brave-browser
   # - hot
   - iterm2
   # - microsoft-azure-storage-explorer
   # - microsoft-remote-desktop
   - nextcloud
-  - notion
+  # - notion
   # - postman
-  - pycharm
-  # - pycharm-ce
+  # - pycharm
+  - pycharm-ce
   - rectangle
   - signal
   - discord
