@@ -27,7 +27,7 @@ dockitems_persist:
   path: "/Applications/iTerm.app/"
   pos: 9
 - name: "PyCharm"
-  path: "/Applications/PyCharm CE.app/"
+  path: "/Applications/PyCharm.app/"
   pos: 10
 - name: "Visual Studio Code"
   path: "/Applications/Visual Studio Code.app/"
@@ -35,11 +35,6 @@ dockitems_persist:
 - name: "Activity Monitor"
   path: "/Applications/Utilities/Activity Monitor.app/"
   pos: 12
-- name: "Notion"
-  path: "/Applications/Notion.app/"
-  pos: 13
-- name: "Signal"
-  path: "/Applications/Signal.app/"
 
 
 
@@ -61,7 +56,7 @@ homebrew_installed_packages:
   # - gpg
   # - hadoop
   # - httpie
-  - kubernetes-cli
+  # - kubernetes-cli
   # - msodbcsql18
   # - mssql-tools18
   # - unixodbc
@@ -71,7 +66,7 @@ homebrew_installed_packages:
   - openssl
   - pyenv
   # - snappy
-  - sqlite
+  # - sqlite
   - uv
   - wget
 
@@ -82,30 +77,30 @@ homebrew_taps: []
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   # - adobe-acrobat-reader
-  - aldente
-  - altserver
+  # - aldente
+  # - altserver
   - alt-tab
-  - docker
+  # - docker
   # - google-chrome
   - brave-browser
   # - hot
   - iterm2
   # - microsoft-azure-storage-explorer
   # - microsoft-remote-desktop
-  - nextcloud
+  # - nextcloud
   # - notion
   # - postman
-  # - pycharm
-  - pycharm-ce
+  - pycharm
+  # - pycharm-ce
   - rectangle
-  - signal
-  - discord
-  - teamviewer
-  - transmission
-  - tor-browser
+  # - signal
+  # - discord
+  # - teamviewer
+  # - transmission
+  # - tor-browser
   - visual-studio-code
-  - vlc
-  - wine-stable
+  # - vlc
+  # - wine-stable
 
 
 # See `geerlingguy.mas` role documentation for usage instructions.
